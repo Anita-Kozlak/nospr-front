@@ -1,0 +1,404 @@
+.btn-signout,
+.btn-mainview,
+.btn-admin__users {
+    font-size: 0.8571em;
+    line-height: 1.35em;
+    margin: 10px 10px;
+    font-weight: 600;
+    border-radius: $border-radius-small;
+    text-decoration: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: #EFEFEF;
+    &:hover {
+        background-color: $opacity-gray-7;
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-delete {
+    cursor: pointer;
+    padding: 10px;
+    background-color: red;
+    color: white;
+
+
+}
+
+.btn-base,
+.btn,
+.navbar .navbar-nav > a.btn{
+    border-width: $border-thick;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-small;
+    line-height: $line-height;
+    margin: 10px 1px;
+    border: none;
+    border-radius: $border-radius-small;
+    padding: $padding-btn-vertical $padding-btn-horizontal;
+    cursor: pointer;
+
+    @include btn-styles($default-color, $default-states-color);
+
+    &:hover,
+    &:focus{
+        @include opacity(1);
+        outline: 0 !important;
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+         @include box-shadow(none);
+         outline: 0 !important;
+    }
+
+    &.btn-icon {
+        // see above for color variations
+        height: $btn-icon-size-regular;
+        min-width: $btn-icon-size-regular;
+        width: $btn-icon-size-regular;
+        padding: 0;
+        font-size: $btn-icon-font-size-regular;
+        overflow: hidden;
+        position: relative;
+        line-height: normal;
+
+        &.btn-simple{
+            padding: 0;
+        }
+
+        &.btn-sm{
+            height: $btn-icon-size-small;
+            min-width: $btn-icon-size-small;
+            width: $btn-icon-size-small;
+
+            i.fab,
+            i.now-ui-icons{
+                font-size: $btn-icon-font-size-small;
+            }
+        }
+
+        &.btn-lg{
+            height: $btn-icon-size-lg;
+            min-width: $btn-icon-size-lg;
+            width: $btn-icon-size-lg;
+
+            i.now-ui-icons,
+            i.fab{
+                font-size: $btn-icon-font-size-lg;
+            }
+        }
+
+        &:not(.btn-footer) i.now-ui-icons,
+        &:not(.btn-footer) i.fab{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-12px, -12px);
+            line-height: 1.5626rem;
+            width: 23px;
+        }
+
+    }
+
+    &:not(.btn-icon) .now-ui-icons{
+        position: relative;
+        top: 1px;
+    }
+}
+
+// Apply the mixin to the buttons
+.btn-primary { @include btn-styles($success-color-alert, $primary-states-color); }
+.btn-success { @include btn-styles($success-color, $success-states-color); }
+.btn-info    { @include btn-styles($info-color, $info-states-color); }
+.btn-warning { @include btn-styles($warning-color, $warning-states-color); }
+.btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+.btn-neutral { @include btn-styles($opacity-gray-1, $opacity-gray-1); }
+.btn-black { @include btn-styles($default-color, $default-color); }
+.btn-red  { @include btn-styles($danger-color, $danger-states-color); }
+
+
+.btn-round{
+    border-width: $border-thin;
+    border-radius: $btn-round-radius !important;
+    padding: $padding-btn-vertical  $padding-round-horizontal;
+
+    &.btn-simple{
+        padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
+    }
+}
+.btn-simple{
+    border: $border;
+    border-color: $default-color;
+    padding: $padding-btn-vertical - 1 $padding-round-horizontal - 1;
+    background-color: $transparent-bg;
+}
+
+.btn-simple,
+.btn-link{
+    &.disabled,
+    &:disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            background-color: $transparent-bg;
+        }
+    }
+}
+
+.btn-lg{
+   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-large);
+}
+.btn-sm{
+    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-base, $border-radius-small);
+}
+
+.btn-link{
+    border: $none;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    background-color: $transparent-bg;
+}
+
+.btn-wd {
+    min-width: 140px;
+}
+.btn-group.select{
+    width: 100%;
+}
+.btn-group.select .btn{
+    text-align: left;
+}
+.btn-group.select .caret{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 8px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-add {
+    background-color: red;
+    color: white;
+}
+.btn-remove {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+
+}
+.btn-download {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+.btn-send {
+    background-color: white;
+    color: black;
+    outline: none;
+    padding-right: 20px;
+    border: none;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+
+
+}
+.btns {
+    display: flex;
+}
+.btn-add {
+    border: none;
+    margin-right: 10px;
+    padding: 8px 15px 3px;
+    color: white;
+    font-weight: 600;
+}
+.btn-delete {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 8px 15px 3px;
+
+}
+.btn-inner {
+    background-color: black;
+    color: white;
+    &:hover {
+        background-color: black;
+        opacity: 0.6;
+        text-decoration: none;
+        color: white;
+    }
+}
+.btn-download-white,
+.btn-remove-white {
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.buttons-active {
+    display: flex;
+}
+.btn-active {
+    background: red;
+    border: none;
+    padding: 7px;
+    margin-right: 5px !important;
+    &:hover,
+    &:focus {
+        background-color: red;
+    }
+
+}
+.btn-delete-user {
+    padding: 7px;
+    font-size: 11px !important;
+}
+.btn-users {
+    background-color: #EFEFEF;
+    color: black;
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    height: 50px;
+
+    text-decoration: none;
+    &:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+.btn-choose,
+.btn-blue {
+    border: none;
+    background-color: cadetblue;
+    margin-right: 2px !important;
+    &:hover, &:active, &:focus {
+        background-color: cadetblue;
+    }
+}
+.btn-portiernia {
+    border: none;
+    background-color: darkorchid;
+    margin-right: 2px !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darkorchid;
+    }
+}
+.btn-blue,
+.btn-green,
+.btn-yellow,
+.btn-active {
+    padding: 3px;
+    font-size: 11px !important;
+}
+.buttons-info {
+    display: flex;
+    justify-content: left;
+}
+.btn-announcement {
+    padding: 5px;
+}
+.fc-daygrid-event-dot {
+    border: none !important;
+
+}
+.btn-black {
+    border: 3px solid black;
+    color: white !important;
+}
+.btn-add-regulation {
+    margin-top: 100px;
+    background-color: tomato;
+    width: 167px;
+}
+.btn-add-announcement {
+    margin-top: 19px;
+    width: 200px;
+    background-color: green;
+}
+.btn-green {
+    background: green;
+    border: none;
+    margin-right: 3px !important;
+    &:hover,
+    &:focus {
+        background-color: green;
+    }
+}
+
+.btn-yellow {
+    background: orange;
+    border: none;
+    margin-right: 3px !important;
+    &:hover,
+    &:focus {
+        background-color: orange;
+    }
+}
+.circle-yellow,
+.circle-green {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    
+}
+.circle-green {
+    background-color: green;
+
+}
+.btn-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-info {
+    margin-left: 5px !important;
+}
+.btn-edit {
+    background-color: orange;
+    margin-left: 7px;
+    &:hover, &:active, &:focus {
+        background-color: orange;
+    }
+
+}
+.btn-save {
+    background-color: green;
+    margin-left: 7px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: green;
+    }
+
+}
+.btn-more-less {
+    background-color: blue;
+}

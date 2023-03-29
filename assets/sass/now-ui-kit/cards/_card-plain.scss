@@ -1,0 +1,28 @@
+.card-plain{
+    background: transparent;
+    box-shadow: none;
+
+    .card-body,
+    .card-header{
+        padding-left: 5px;
+        padding-right: 5px;
+        // background-color: white;
+    }
+
+    .card-header:after{
+        width: 100%;
+        left: 0;
+    }
+}
+.card-users {
+    background: white;
+    padding-top: 30px;
+    max-height: 84vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+.cell {
+    font-size: 12px;
+    padding-left: 0px !important;
+}

@@ -1,0 +1,383 @@
+// //
+// // Full Calendar
+// //
+
+
+
+.fc-header-toolbar {
+    display: none;
+}
+
+.fc-scroller {
+    height: auto !important;
+}
+
+.card-calendar-body {
+  .fc th {
+    text-align: left !important;
+  }
+
+  .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    min-height: 5em;
+  }
+
+  table {
+    border-left: 0;
+  }
+
+  .fc-daygrid-day-number {
+    font-size: 10px;
+    padding: 5px !important;
+  }
+
+  .fc .fc-col-header-cell-cushion {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.widget-calendar {
+  .fc-theme-standard td, .fc-theme-standard th,
+  .fc-theme-standard .fc-scrollgrid {
+    border: 0;
+  }
+}
+
+
+.fc {
+    th {
+        padding: 10px;
+        text-transform: uppercase;
+    }
+
+    .fc-daygrid-day-number {
+      width: 100%;
+    }
+
+    .fc-daygrid-day.fc-day-today {
+      background-color: transparent !important;
+      color: $orange;
+    }
+
+    div.fc-row {
+        margin-right: 0;
+        border: 0;
+    }
+
+    button {
+        .fc-icon {
+            top: -5px;
+        }
+    }
+}
+
+.fc-unthemed {
+    td.fc-today {
+        background-color: transparent;
+
+        span {
+            color: $orange;
+        }
+    }
+}
+
+.fc-h-event {
+    padding: .4rem .5rem;
+    background-color: thistle !important;
+    border: 2px solid thistle !important;
+    font-weight: $font-weight-bold;
+  
+
+  &.fc-daygrid-event {
+    margin: 1px 9px !important;
+
+
+  }
+
+  .fc-event-title {
+    color: white !important;
+   text-overflow: ellipsis;
+  }
+
+  .fc-event-time {
+    float: left;
+    padding: 2px 6px;
+    margin: 0 0 0 -1px;
+    color: $white;
+  }
+
+  .fc-daygrid-event-dot {
+    display: none;
+  }
+}
+
+
+.fc-view {
+    &, & > table {
+        border: 0;
+        overflow: hidden;
+    }
+    & > table {
+        & > tbody {
+            & > tr {
+                .ui-widget-content {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+}
+
+.fc-body {
+    border: 0;
+}
+
+.fc-icon {
+    // font-family: $icon-font-family;
+    // font-size: $font-size-base;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+
+    &:hover {
+        color: theme-color("primary");
+    }
+}
+
+.fc-button {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
+
+
+// Main Calendar
+
+.card-calendar {
+    z-index: 0;
+
+    .fc-toolbar {
+        height: 250px;
+        background-color: $white;
+        position: relative;
+        margin-bottom: -2px;
+        z-index: 2;
+    }
+
+    .fc-day-number {
+        padding: .5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .fc-day-header {
+        text-align: left;
+    }
+}
+
+.btn {
+    position: relative;
+    text-transform: $btn-text-transform;
+    transition: $transition-base;
+    letter-spacing: $btn-letter-spacing;
+    font-size: $input-btn-font-size;
+    will-change: transform;
+  
+    
+
+    &:hover {
+        @include box-shadow($btn-hover-box-shadow);
+        transform: translateY($btn-hover-translate-y);
+    }
+
+    &:not(:last-child) {
+        margin-right: .5rem;
+    }
+
+   // Icons
+
+    i:not(:first-child),
+    svg:not(:first-child) {
+        margin-left: .5rem;
+    }
+
+    i:not(:last-child),
+    svg:not(:last-child) {
+        margin-right: .5rem;
+    }
+}
+.new-event--start,
+.new-event--end {
+ background-color: $transparent-bg;
+    border: 1px solid $dark-gray;
+    color: $black-color;
+    width: 100px;
+}
+.input-time {
+    display: flex;
+    input {
+        margin-right: 5px;
+        }
+    @include tablet {
+        input {
+            margin-right: 25px;
+        }   
+    }
+}
+
+
+.mt-3 {
+    margin-top: 100px;
+}
+.btn-status {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-info {
+    border: 3px solid $info-color !important;
+    background-color: $info-color !important;
+    color: black !important;
+}
+.btn-warning {
+    border: 3px solid $warning-color !important;
+    background-color: $warning-color !important;
+    color: black !important;
+}
+.btn-PI {
+    border: 3px solid $dark-gray!important;
+    background-color: $dark-gray !important;
+    color: black !important;
+}
+.btn-danger {
+    border: 3px solid $danger-color !important;
+    background-color: $danger-color !important;
+    color: black !important;
+}
+.btn-success {
+    border: 3px solid $success-color !important;
+    background-color: $success-color !important;
+    color: black !important;
+}
+.btn-black {
+    border: 3px solid $default-color !important;
+    background-color: $default-color !important;
+
+}
+
+.calendar-download {
+    color: black;
+    &:hover {
+        color: black;
+    }
+}
+
+.calendar-cast {
+    margin-top: 10px;
+}
+.checkbox-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .day {
+        margin-bottom: 0;
+    }
+}
+
+.fc table {
+    font-size: 0.93em !important;
+}
+
+
+.card a:not(.btn):not(.nav-link):not([data-toggle='collapse']):not(.footer-link) {
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: black;
+    padding: 10px 0;
+}
+.notification-title {
+    margin-bottom: 40px;
+    align-items: center;
+}
+.notification-checkbox {
+        display: flex;
+        align-items: center;
+        .notification {
+            margin-left: 10px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+    }
+}
+.btn-brown {
+    border: 3px solid #8B4513!important;
+    background-color: #8B4513!important;
+    color: white !important
+
+}
+.btn-light {
+    border: 3px solid #DEB887 !important;
+    background-color: #DEB887!important;
+
+}
+.btn-blue {
+     border: 3px solid blueviolet !important;
+    background-color: blueviolet!important; 
+}
+.fc-day-disabled {
+    visibility:hidden;
+
+}
+.fc-other-month .fc-day-number {
+     display:none;
+}
+.fc-h-event.fc-daygrid-event {
+    margin: 2px !important;
+}
+.card-calendar-body .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+    min-height: 4.5em !important;
+}
+
+.fc .fc-daygrid-body-natural .fc-daygrid-day-events {
+    margin-bottom: 0em !important;
+}
+.card-calendar-body .fc-daygrid-day-number {
+    padding: 2px !important;
+}
+.fc table {
+    font-size: 0.7rem !important;
+}
+.fc-fri {
+    background-color: blue;
+}
+
+.fc-sat {
+    background-color: red;
+}
+
+.fc-day-sat {
+    background-color: #ffebea !important;
+}
+.fc-day-sun {
+    background-color: #f6c2c0 !important;
+}
+ .h3 {
+     font-size: 1.6em;
+   
+ }
+ .btn {
+    margin: 5px 1px;
+ }
+
+ .card a:not(.btn):not(.nav-link):not([data-toggle='collapse']):not(.footer-link) {
+     padding:3px 0 !important;
+ }
+
+.fc .fc-daygrid-day.fc-day-today {
+    border: 2px solid black
+}

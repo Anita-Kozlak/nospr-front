@@ -1,0 +1,46 @@
+{
+  "name": "Inspektor",
+  "version": "1.0.2",
+  "description": "Inspektor NOSPR",
+  "author": "Anita Koźlak",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fullcalendar/daygrid": "^5.5.0",
+    "@fullcalendar/interaction": "^5.5.0",
+    "@fullcalendar/timegrid": "^5.5.1",
+    "@fullcalendar/vue": "^5.5.0",
+    "@nuxt/content": "^1.15.1",
+    "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "@nuxtjs/toast": "^3.3.1",
+    "@pusher/push-notifications-web": "^2.0.0-beta.2",
+    "bootstrap": "4.3.1",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.11.1",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.6.0",
+    "nouislider": "^11.1.0",
+    "nuxt": "^2.8.1",
+    "rellax": "^1.10.0",
+    "v-mask": "^2.2.4",
+    "vue-chat-scroll": "^1.4.0",
+    "vue-lazyload": "^1.2.6",
+    "vue-read-more": "^1.1.1",
+    "vue2-google-maps": "^0.9.6",
+    "vue2-touch-events": "^3.2.2",
+    "vue2-transitions": "^0.2.3",
+    "vuelidate": "^0.7.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/moment": "^1.6.1",
+    "babel-plugin-component": "^1.1.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0"
+  }
+}

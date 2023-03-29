@@ -1,0 +1,144 @@
+.card-signup {
+  max-width: 350px;
+  margin: 0 auto;
+
+  .card-header {
+    margin: 0 20px;
+    padding: 30px 0;
+  }
+
+  .card-title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: auto;
+  }
+
+  .form-check,
+  .form-check.form-check-radio {
+    margin-top: 20px;
+
+    label {
+      margin-left: 11px;
+      color: initial;
+      padding-left: 40px;
+    }
+  }
+
+  .card-description {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .social-line {
+    margin-top: 20px;
+    text-align: center;
+
+    .btn.btn-icon,
+    .btn.btn-icon .btn-icon {
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+      box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+.form-error {
+  color: white;
+  font-size: 10px;
+  margin-top: -17px;
+  margin-bottom: 29px;
+  font-weight: 600;
+}
+.form-error-checkbox {
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+}
+.open-modal {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.title-regulation {
+  font-size: 17px;
+  text-transform: none;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+img {
+  max-width: 50%;
+}
+.show-password {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxMiI+CiAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMi44NDMgNy44MjRjLTMuMjE5LTMuNzM0LTYuNzI4LTUuNjI2LTEwLjQyNi01LjYyNi02LjM0NyAwLTExLjIyNCA1LjU3LTExLjI3MiA1LjYyNWwtMS4xNDktLjk0OEMuMjEzIDYuNjI0IDUuMzc5LjcyNiAxMi40MTcuNzI2YzQuMTYyIDAgOC4wNTYgMi4wNjkgMTEuNTc1IDYuMTQ4bC0xLjE0OS45NXpNMTEuOTk0IDQuODk2YzEuOTM3IDAgMy41MDcgMS41MzggMy41MDcgMy40MzQgMCAxLjg5Ny0xLjU3IDMuNDM0LTMuNTA3IDMuNDM0UzguNDg2IDEwLjIyNyA4LjQ4NiA4LjMzYzAtMS44OTYgMS41NzEtMy40MzQgMy41MDgtMy40MzR6Ii8+Cjwvc3ZnPgo=);
+  width: 32px;
+  height: 28px;
+  background-repeat: no-repeat;
+  background-position: center 8px;
+  background-size: auto;
+  background-color: rgba(222, 222, 222, 0);
+  border: none;
+  position: relative;
+  right: 14px;
+  top: 9px;
+  z-index: 999;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.field-password {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+}
+
+.field-password:hover {
+  background-color: white;
+}
+
+.input-password {
+  background: none !important;
+}
+
+#div_background > div
+{
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+
+background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#div_background
+{background-attachment: fixed;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    overflow-x: hidden;
+}

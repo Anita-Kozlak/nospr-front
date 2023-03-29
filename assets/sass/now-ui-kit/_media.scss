@@ -1,0 +1,187 @@
+.media{
+    .avatar{
+        margin: 0 auto;
+        width: 64px;
+        height: 64px;
+        margin-right: 15px;
+
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    textarea{
+        background-color: white;
+        padding-left: 10px;
+    }
+
+    .media-heading small{
+        font-family: $sans-serif-family;
+    }
+    .media-body{
+        .media .media-body{
+            padding-right: 0;
+        }
+    }
+    &.media-post{
+        .form-group,
+        .input-group{
+            margin-top: 25px;
+        }
+    }
+    .media-footer{
+        
+        .btn{
+            margin-bottom: 20px;
+
+        }
+
+        &:after{
+            display: table;
+            content: " ";
+            clear: both;
+        }
+    }
+    p{
+        color: $default-color;
+        font-size: 0.7em;
+        line-height: 1.61em;
+        font-weight: 400;
+    
+    }
+}
+.media-left,
+.media>.pull-left{
+    padding: 10px;
+}
+.media-color__right {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    background-color: gainsboro;
+    padding: 8px;
+    // width: fit-content;
+    border-radius: 10px;
+    word-break: break-word;
+
+}
+.media-color__left {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    // width: fit-content;
+    border-radius: 10px;
+    word-break: break-word;
+    
+}
+.media-left {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.media-right {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.media-scroll {
+    max-height: 63vh;
+    min-height: 63vh;
+    height: 100%;
+    overflow: auto;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+.media-chat {
+    display: block;
+}
+.media-send {
+    display: flex;
+}
+$tablet-width: 768px;
+$desktop-width: 1025px;
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+    
+.media-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.media-add__post {
+  border: 1px solid black;
+}
+.media-heading-announcements {
+    font-size: 0.9rem;
+    padding: 30px 10px 10px 10px;
+
+
+}
+
+.media-announcements {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+//   padding-bottom: 30px;
+//   border-bottom: 1px solid grey
+}
+.media-regulation {
+    display: flex;
+    margin-bottom: 20px;
+}
+.container-height {
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+.announcements-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+.announcement {
+    width: 300px;
+    padding: 60px;
+    color: black;
+    text-decoration: none;
+    background-color: lightgray;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+}
+.title-announcement {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.image-back {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+.allTeams {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,177 @@
+.mainViewPage {
+  position: absolute;
+  .mainView {
+  position: relative;
+  margin: auto;
+  max-width: 600px;
+  background-color: white;
+  height: 660px;
+  overflow: hidden;
+  // font-family: 'Merriweather', serif;
+  margin-bottom: 50px;
+  margin-top: 4rem;
+
+  .view {
+  
+    position: absolute;
+    padding-left: 15px;
+    text-transform: uppercase;
+    height: 85px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 50px;
+    background-color: black;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+      &:hover {
+        color: 	#8B4513;
+        // box-shadow:  12px 15px -5px rgba(0,0,0,0.9);
+        // box-shadow: -2px 1px 16px 0px rgba(0,0,0,0.38);
+
+     
+    }
+    @include tablet {
+      font-size: 15px;
+      padding-left: 20px;
+    
+    }
+  }
+
+.workPlan,
+.announcementsAll,
+.regulations,
+.user-setting,
+.chat,
+.contact,
+.availabilityOfWardrobes,
+.materials {
+  color: black;
+  background-color: white;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  @include tablet {
+    width: 733px;
+   
+  }
+}
+  .availabilityOfRooms,
+  .admin,
+  .tickets,
+  .reg,
+  .reviews,
+  .rules {
+    background-color: black;
+    width: 100%;
+    color: white;
+    height: 63px;
+    left: 190px;
+    cursor: none;
+
+    @include tablet {
+      width: 379px;
+      left: 251px;
+    }
+
+  }
+
+  .availabilityOfRooms {
+    top: 48px;
+    }
+   .announcementsAll {
+    background-color: transparent;
+    top: 83px;
+    border-top: none;  
+  
+  }
+  .admin {
+    top: 132px;
+    }
+  .tickets {
+    top: 301px;
+   }
+  .chat {
+    background-color: transparent;
+    top: 165px;
+    border-top: none;
+    border-bottom: none;
+  }
+  .reg {
+      top: 384px;
+    }
+    .regulations {
+      background-color: transparent;
+      top: 330px;
+      border-top: none;
+    }
+  .materials {
+    background-color: transparent;
+    top: 248px;
+    
+
+  }
+  .availabilityOfWardrobes {
+      background-color: transparent;
+      top: 410px;
+      border-top: none;
+    
+  }
+  .reviews {
+    top: 467px;
+
+  }
+  .user-setting {
+
+    background-color: transparent;
+    top: 493px;
+    border-top: none;
+
+  }
+.contact {
+     background-color: transparent;
+    top: 576px;
+    border-top: none;
+
+  }
+  .rules {
+    top: 768px;
+
+    }
+  }
+}
+
+.workPlan {
+  top: -100px;
+  background-color: white;
+  color: black;
+  width: 250px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  position: relative;
+}
+
+.legalInfo-container {
+  display: flex;
+  flex-direction: column;
+  .legalInfo {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+}

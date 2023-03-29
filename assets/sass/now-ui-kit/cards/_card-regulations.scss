@@ -1,0 +1,27 @@
+.regulations-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    .regulation-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        margin-right: 20px;
+
+        &:hover {
+            color: #CD853F;
+            font-weight: 400;
+        }
+    }
+}
+.regulations-column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.add-regulation {
+    max-width: 750px;
+    margin: auto;
+}
