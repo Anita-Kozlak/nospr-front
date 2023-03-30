@@ -3,7 +3,9 @@
   "version": "1.0.3",
   "engines": {
     "node": "18.15.0",
-    "python": "2.7"
+     "npm": "9.6.2"
+
+
   },
   "description": "Inspektor NOSPR",
   "author": "Anita Koźlak",
@@ -15,7 +17,6 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "heroku-postbuild": "npm run build"
-
   },
   "dependencies": {
     "@fullcalendar/daygrid": "^5.5.0",
@@ -48,6 +49,7 @@
     "@nuxtjs/moment": "^1.6.1",
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.14.1",
+    "python2": "^0.0.1",
     "sass-loader": "^7.1.0"
   }
 }
