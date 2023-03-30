@@ -1,6 +1,9 @@
 {
   "name": "Inspektor",
   "version": "1.0.3",
+  "engines": {
+    "node": "18.15.0"
+  },
   "description": "Inspektor NOSPR",
   "author": "Anita Koźlak",
   "private": true,
@@ -41,9 +44,9 @@
   },
   "devDependencies": {
     "@nuxtjs/moment": "^1.6.1",
+    "@vercel/node": "^2.10.2",
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.14.1",
-    "python2": "^0.0.1",
     "sass-loader": "^7.1.0"
   }
 }
