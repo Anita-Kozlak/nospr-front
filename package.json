@@ -33,7 +33,7 @@
     "nouislider": "^11.1.0",
     "nuxt": "^2.8.1",
     "rellax": "^1.10.0",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "^7.3.1",
     "v-mask": "^2.2.4",
     "vue-chat-scroll": "^1.4.0",
     "vue-lazyload": "^1.2.6",
