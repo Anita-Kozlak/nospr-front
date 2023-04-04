@@ -9,7 +9,7 @@
           class="col-md-5 ml-auto mr-auto text-center"
           style="{display: 'flex}"
         >
-          <img v-lazy="'img/nospr_logo.jpg'" alt="logo" />
+          <img style="width: 300px" class="mb-5" v-lazy="'img/nospr_logo.jpg'" alt="logo" />
           <card type="login" plain>
             <fg-input
               class="no-border input-lg"
@@ -100,33 +100,31 @@
               {{ validation.agree.message }}
             </p>
 
-            <template slot="raw-content">
-              <div class="card-footer text-center">
-                <a
-                  class="btn btn-default btn-round btn-lg btn-block"
-                  @click="registerUser"
-                >
-                  Zarejestruj się</a
-                >
-              </div>
+            <div class="card-footer text-center">
+              <a
+                class="btn btn-default btn-round btn-lg btn-block"
+                @click="registerUser"
+              >
+                Zarejestruj się</a
+              >
+            </div>
 
-              <div class="pull-left">
-                <h6>
-                  <div class="link footer-link">Masz konto?</div>
-                </h6>
-              </div>
-              <div class="pull-right">
-                <h6>
-                  <router-link
-                    v-popover:popover1
-                    class="link footer-link"
-                    to="login"
-                  >
-                    Zaloguj się
-                  </router-link>
-                </h6>
-              </div>
-            </template>
+            <div class="pull-left">
+              <h6>
+                <div class="link footer-link">Masz konto?</div>
+              </h6>
+            </div>
+            <div class="pull-right">
+              <h6>
+                <router-link
+                  v-popover:popover1
+                  class="link footer-link"
+                  to="login"
+                >
+                  Zaloguj się
+                </router-link>
+              </h6>
+            </div>
           </card>
         </div>
       </div>
@@ -376,8 +374,7 @@ export default {
       }
     },
     validatePhoneNumber() {
-      const validationRegex =
-        /^(?:[+]48?\d{9}$)/;
+      const validationRegex = /^(?:[+]48?\d{9}$)/;
       if (!this.phoneNumber.length) {
         this.validation.phoneNumber.isValid = false;
         this.validation.phoneNumber.message = "To pole jest obowiązkowe.";

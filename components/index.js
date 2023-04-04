@@ -6,13 +6,9 @@ import Switch from './Switch.vue'
 import Button from './Button.vue'
 import DropDown from './Dropdown.vue'
 import Table from './Table.vue'
-import Card from './Cards/Card.vue'
-import StatsCard from './Cards/StatsCard.vue'
 import Navbar from './Navbar/Navbar';
 import NavLink from './Navbar/NavLink';
 import NavbarToggleButton from './Navbar/NavbarToggleButton';
-import TabPane from './Tabs/Tab.vue'
-import Tabs from './Tabs/Tabs.vue'
 import Modal from './Modal.vue'
 import Pagination from './Pagination.vue'
 import Comment from './Comments/Comment'
@@ -24,15 +20,11 @@ export {
   Pagination,
   Radio,
   FormGroupInput,
-  Card,
-  StatsCard,
   Table,
   DropDown,
   Navbar,
   NavbarToggleButton,
   NavLink,
-  TabPane,
-  Tabs,
   Modal,
   Button,
   Comment,

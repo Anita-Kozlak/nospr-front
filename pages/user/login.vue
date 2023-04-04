@@ -5,7 +5,12 @@
     </div>
     <div class="content">
       <div class="col-md-5 ml-auto mr-auto">
-        <img v-lazy="'img/nospr_logo.jpg'" alt="" />
+        <img
+          style="width: 300px"
+          class="mb-5"
+          v-lazy="'img/nospr_logo.jpg'"
+          alt="logo"
+        />
         <card type="login" plain>
           <fg-input
             class="no-border input-lg"
@@ -46,33 +51,31 @@
             Zapomniałeś hasła?
           </div>
 
-          <template slot="raw-content">
-            <div class="card-footer text-center">
-              <button
-                id="loginUserButton"
-                class="btn btn-default btn-round btn-lg btn-block"
-                @click="loginUser"
+          <div class="card-footer text-center">
+            <button
+              id="loginUserButton"
+              class="btn btn-default btn-round btn-lg btn-block"
+              @click="loginUser"
+            >
+              Zaloguj się
+            </button>
+          </div>
+          <div class="pull-left">
+            <h6>
+              <a class="link footer-link text-white">Nie masz konta?</a>
+            </h6>
+          </div>
+          <div class="pull-right">
+            <h6>
+              <router-link
+                v-popover:popover1
+                class="link footer-link"
+                to="register"
               >
-                Zaloguj się
-              </button>
-            </div>
-            <div class="pull-left">
-              <h6>
-                <a class="link footer-link text-white">Nie masz konta?</a>
-              </h6>
-            </div>
-            <div class="pull-right">
-              <h6>
-                <router-link
-                  v-popover:popover1
-                  class="link footer-link"
-                  to="register"
-                >
-                  Zarejestruj się
-                </router-link>
-              </h6>
-            </div>
-          </template>
+                Zarejestruj się
+              </router-link>
+            </h6>
+          </div>
         </card>
       </div>
     </div>
@@ -107,7 +110,7 @@ export default {
     [Button.name]: Button,
     [FormGroupInput.name]: FormGroupInput,
   },
-  middleware: ['version'],
+  middleware: ["version"],
   mounted() {
     let userAgentString = navigator.userAgent;
 
@@ -116,12 +119,12 @@ export default {
     let chromeAgent = userAgentString.indexOf("Chrome") > -1;
 
     // Discard Safari since it also matches Chrome
-    if ((chromeAgent) && (safariAgent)) safariAgent = false;
+    if (chromeAgent && safariAgent) safariAgent = false;
     this.isSafari = safariAgent;
   },
   data() {
     return {
-      isSafari : false,
+      isSafari: false,
       showModal: false,
       showModalInfo: false,
       email: "",
@@ -149,14 +152,17 @@ export default {
           .post("/user/auth", {
             login: this.email,
             password: this.password,
-            is_safari: this.isSafari
+            is_safari: this.isSafari,
           })
           .then((response) => {
             localStorage.setItem("token", response.data.token);
             this.$api.setToken(response.data.token, "Bearer");
 
-            if (typeof(Notification) !== 'undefined' && Notification?.permission !== 'denied') {
-              this.$pusher.setData(response.data.token, response.data.id)
+            if (
+              typeof Notification !== "undefined" &&
+              Notification?.permission !== "denied"
+            ) {
+              this.$pusher.setData(response.data.token, response.data.id);
               this.$pusher.init();
             }
 
