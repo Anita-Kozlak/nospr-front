@@ -2,7 +2,7 @@
   "name": "Inspektor",
   "version": "1.0.3",
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "description": "Inspektor NOSPR",
   "author": "Anita Koźlak",
