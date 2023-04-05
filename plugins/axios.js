@@ -24,7 +24,7 @@ export default function ({ $axios, app }, inject) {
   // Set baseURL to something different
 
   // api.setBaseURL("https://api.inspektor.nfm.wroclaw.pl");
-  api.setBaseURL("http://localhost");
+  api.setBaseURL("https://nospr-back.herokuapp.com");
 
   // Inject to context as $api
   inject("api", api);
