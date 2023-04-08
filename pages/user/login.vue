@@ -6,7 +6,7 @@
     <div class="content">
       <div class="col-md-5 ml-auto mr-auto">
         <img
-          style="width: 300px"
+          style="width: 50%"
           class="mb-5"
           v-lazy="'img/nospr_logo.jpg'"
           alt="logo"

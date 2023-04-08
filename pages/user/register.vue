@@ -9,7 +9,7 @@
           class="col-md-5 ml-auto mr-auto text-center"
           style="{display: 'flex}"
         >
-          <img style="width: 300px" class="mb-5" v-lazy="'img/nospr_logo.jpg'" alt="logo" />
+          <img style="width: 50%" class="mb-5" v-lazy="'img/nospr_logo.jpg'" alt="logo" />
           <card type="login" plain>
             <fg-input
               class="no-border input-lg"
@@ -146,7 +146,7 @@
         internetową;<br />3. Administrator Platformy-Softart Anita Koźlak
         (zarządca Platformy);<br />
         4. Strona internetowa –strona internetowa pod adresem
-        https://inspektor.nfm.wroclaw.pl oraz wszelkie jej podstrony oraz
+        ..... oraz wszelkie jej podstrony oraz
         subdomeny; <br />Strony – Administrator i Użytkownik;<br />
         Użytkownik – osoba fizyczna, która korzysta z Platformy i podaje w jego
         ramach swoje dane osobowe.<br /><br />§ 3.[Ochrona danych osobowych]<br /><br />
