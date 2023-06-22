@@ -24,7 +24,7 @@ export default function ({ $axios, app }, inject) {
   // Set baseURL to something different
 
   api.setBaseURL("https://api.inspektor.softart.online");
-
-login  // Inject to context as $api
+  
+  // Inject to context as $api
   inject("api", api);
 }
