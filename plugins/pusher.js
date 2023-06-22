@@ -11,10 +11,8 @@ export default function ({ app }, inject) {
     if (userId !== null && userToken !== null) {
       window.navigator.serviceWorker.ready.then((serviceWorkerRegistration) => {
         tokenProvider = new PusherPushNotifications.TokenProvider({
-          //   api.setBaseURL("https://nospr-back.herokuapp.com");
-          url: "https://nospr-back.herokuapp.com/user/get-beams-token",
+          url: "https://api.inspektor.softart.online/user/get-beams-token",
 
-          // url: "https://api.inspektor.nfm.wroclaw.pl/user/get-beams-token",
           headers: {
             Authorization: `Bearer ${userToken}`,
           },

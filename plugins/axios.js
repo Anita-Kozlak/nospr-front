@@ -23,9 +23,8 @@ export default function ({ $axios, app }, inject) {
   // api.defaults.post['content-type'] = 'application/json'
   // Set baseURL to something different
 
-  // api.setBaseURL("https://api.inspektor.nfm.wroclaw.pl");
-  api.setBaseURL("https://nospr-back.herokuapp.com");
+  api.setBaseURL("https://api.inspektor.softart.online");
 
-  // Inject to context as $api
+login  // Inject to context as $api
   inject("api", api);
 }
